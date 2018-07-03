@@ -10,15 +10,13 @@ chai.use(chaiHttp);
 let foo = "halksdjhfalsdjfh";
 
 describe('users', function(){
-    it("should list items on GET", function() {
+    it("should be the home/first page", function() {
         return chai
           .request('http://localhost:8080')
           .get("/")
           .then(function(res) {
             expect(res).to.have.status(200); 
+            
           });
       });
-    
-
-
 });
