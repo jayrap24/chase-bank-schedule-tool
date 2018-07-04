@@ -4,16 +4,22 @@ const app = express();
 app.use(express.static('public'));
 
 
-app.get("/home", (req, res) => {
-    res.sendfile('home/home.html');
+const { router: employeeRouter } = require('./employee/employee-route');
+const { router: homeRouter } = require('./home/home-route');
+
+app.use('/employee', employeeRouter);
+app.use('/home', homeRouter);
+
+
+
+
+const data = require('./app');
+
+app.get("/test", (req, res) => {
+    res.json(data)
     console.log("got to localhost 8080")
   });
 
-
-app.get("/employee", (req, res) => {
-    res.sendFile(__dirname + '/employee/employee.html');
-    console.log("got to localhost 8080")
-  });
 
 
 
