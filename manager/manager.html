@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" href="manager.css">
+	<title></title>
+</head>
+<body>
+    
+    <h1>Manager Page</h1>
+
+    <div id="managerListBox">
+          <ul id="managerList">
+          </ul>
+    </div>
+    
+
+    <form id="managerForm" action="/" method="post">
+      <label for="managerNameInput">Manager Name</label><br/>
+      <input id="managerNameInput" type="text" name="managerNameInput" required="required" /><br/>
+
+      <label for="branchNameInput"Branch Name>Branch Name</label><br/>
+      <input id="branchNameInput" type="text" name="branchNameInput" required="required" /><br/>
+
+      <label for="emailInput"Branch Name>email</label><br/>
+      <input id="emailInput" type="text" name="emailInput" required="required" /><br/>
+      
+
+
+      <button type="submit">submit</button>
+    </form>
+    
+    
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+    <script src="/manager.js"></script>
+</body>
+</html>

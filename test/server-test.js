@@ -7,16 +7,53 @@ const expect = chai.expect;
 
 chai.use(chaiHttp);
 
-let foo = "halksdjhfalsdjfh";
 
 describe('users', function(){
-    it("should be the home/first page", function() {
+    it("should be the employee page", function() {
         return chai
           .request('http://localhost:8080')
-          .get("/")
+          .get("/employee")
           .then(function(res) {
             expect(res).to.have.status(200); 
             
           });
       });
+
+      
+      it("should be the manager page", function() {
+        return chai
+          .request('http://localhost:8080')
+          .get("/manager")
+          .then(function(res) {
+            expect(res).to.have.status(200); 
+            
+          });
+      });
+
 });
+
+
+
+/*
+
+const assert = require('chai').assert;
+const add = require('../add');
+
+
+
+    describe('first', function() {
+        it('should add 5 and return 10', function(){
+            let result = add(5);
+            assert.equal(result, 10)
+        });
+
+        it('should return typof number', function(){
+            let result = add(5);
+            assert.typeOf(result, 'number')
+        });
+
+        
+  }
+);
+
+*/
