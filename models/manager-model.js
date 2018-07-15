@@ -5,7 +5,6 @@ const managerSchema = mongoose.Schema({
     branchName: String,
     managerName: String,
     text: String,
-    phone: Number,
     email: String
 })
 

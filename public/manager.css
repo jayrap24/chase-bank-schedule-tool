@@ -1,25 +1,147 @@
-body{
-    background: rgb(48, 107, 117);
+* {
+  box-sizing: border-box;
 }
+body{
+    background: linear-gradient( rgb(132, 136, 151),rgb(5, 14, 51));
+}
+
+ /*============================Navbar================================= */
+ .topnav {
+  overflow: hidden;
+  background-color: rgb(22, 28, 53);
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+
+
+.topnav a {
+  color: rgb(243, 243, 243);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: rgb(116, 114, 114);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+ /*============================Manager Form Input================================= */
+#managerTitle{
+  padding: 20px;
+}
+
+#managerForm{
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  
+}
+
+#managerForm input{
+  width: 40%;
+  margin: auto;
+}
+
+button{
+  margin:10px;
+}
+
+/*============================Manager List================================= */
+
+#managerTitle{
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+    color: rgb(255, 255, 255);
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: rgb(22, 28, 53);
+  color: rgb(223, 221, 221);
+}
+
+
+
+
+/* manager list container */
 
 #managerListBox{
-    background: white;
-    padding: 10px;
-    width: 500px;
+    background: rgb(201, 200, 200);
+    padding: 2px;
+    width:50%;
     font-weight: 600;
-    letter-spacing: 1px;
-    
+    letter-spacing: 1px;  
+}
+.wrapper{
+  padding: 10px;
 }
 
-#branchEl{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
+
+/* Remove margins and padding from the list */
+#managerList {
+  margin: 0;
+  padding: 0;
 }
 
-#wrapper{
-    padding: 10px;
-    background: lightblue;
-    margin: 10px;
-    
+/* Style the list items */
+#managerList li {
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1.5px;
+  transition: 0.2s;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+#managerList li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+#managerList li:hover {
+  background: #ddd;
+}
+
+#managerList li:first-child{
+  color:white;
+  background: rgb(22, 28, 53);
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 4px;
+}
+
+#deleteButton{
+  color: red;
+  top:0;
+  right:0;
+  position: absolute;
+  
+}
+
+/*============================Manager List================================= */
+
+footer{
+  padding: 20px;
 }
 

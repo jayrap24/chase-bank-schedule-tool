@@ -7,11 +7,11 @@ function getManagers(){
     $.getJSON("/api/manager", function(data){
         data.managerUpdates.forEach(element => {
             $("#managerList").append(
-            `<div id="wrapper">
-            <div id="branchEl">Branch: ${element.branchName}</div>
-            <div id="managerNameEl"> Manager: ${element.managerName} </div>
-            <div>Email:${element.email}</div>
-            <div>Comment:${element.text}</div>
+            `<div class="wrapper">
+            <li id="branchEl"><span id="deleteButton">&times;</span> Branch: ${element.branchName}</li>
+            <li id="managerNameEl"> Manager: ${element.managerName} </li>
+            <li>Email:${element.email}</li>
+            <li>Comment:${element.text}</li>
             </div>`);
         })  
     })
@@ -30,3 +30,14 @@ $('#managerForm').on("submit", function(e){
         getManagers();
     })
 })
+
+
+
+function myFunction() {
+    let x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }

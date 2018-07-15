@@ -1,33 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!-- fontawesome cdn -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="manager.css">
-	<title></title>
+        <title></title>
 </head>
 <body>
-    
-    <h1>Manager Page</h1>
 
-    <div id="managerListBox">
-          <ul id="managerList">
-          </ul>
+  <!-- Top Navigation Menu -->
+  <div class="topnav">
+    <a href="#home" class="active">JPMorgan Chase Bank Schedule</a>
+    <div id="myLinks">
+      <a href="#news">Availability</a>
+      <a href="#contact">Managers</a>
+      <a href="#about">Employees</a>
     </div>
-    
-
-    <form id="managerForm" action="/" method="post">
-      <label for="managerNameInput">Manager Name</label><br/>
-      <input id="managerNameInput" type="text" name="managerNameInput" required="required" /><br/>
-
-      <label for="branchNameInput"Branch Name>Branch Name</label><br/>
-      <input id="branchNameInput" type="text" name="branchNameInput" required="required" /><br/>
-
-      <label for="emailInput"Branch Name>email</label><br/>
-      <input id="emailInput" type="text" name="emailInput" required="required" /><br/>
+    <a href="#" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+  </div>
+  
+      <form id="managerForm" action="/" method="POST">
+        <fieldset>
+          <legend id="managerTitle">Manager Availability</legend>
+          
+        <label for="managerNameInput"></label><br/>
+        <input class="form-control" id="managerNameInput" type="text" name="managerNameInput" required="required" placeholder="Manager Name"/>
       
+     
+        <label for="branchNameInput"Branch Name></label><br/>
+        <input class="form-control" id="branchNameInput" type="text" name="branchNameInput" required="required" placeholder="Branch Name" />
+     
+       
+        <label for="emailInput"Branch Name></label><br/>
+        <input class="form-control" id="emailInput" type="text" name="emailInput" required="required" placeholder="Email"/>
+        <button type="submit" class="btn btn-primary">submit</button>
+      </fieldset>
+      </form>
+   
+  
+    <div class="col-6 mx-auto" id="managerListBox">
+      <ul id="managerList">
+      </ul>
+    </div>
 
 
-      <button type="submit">submit</button>
-    </form>
+
+    <footer>
+      <p class="text-center text-muted">© Copyright 2014 JPMorgan Chase Bank</p>
+  </footer>
     
     
     <script
