@@ -24,24 +24,33 @@
       </a>
   </div>
   
-      <form id="managerForm" action="/" method="POST">
-        <fieldset>
-          <legend id="managerTitle">Manager Availability</legend>
-          
-        <label for="managerNameInput"></label><br/>
-        <input class="form-control" id="managerNameInput" type="text" name="managerNameInput" required="required" placeholder="Manager Name"/>
-      
+
+  <form id="managerForm" action="/" method="POST">
+    <fieldset>
      
-        <label for="branchNameInput"Branch Name></label><br/>
-        <input class="form-control" id="branchNameInput" type="text" name="branchNameInput" required="required" placeholder="Branch Name" />
-     
+        <legend id="managerTitle">Manager Availability</legend>
+        
+          <label for="managerNameInput">Manager Name</label><br/>
+          <input class="form-control" id="managerNameInput" type="text" name="managerNameInput" required="required" placeholder="Manager Name" />
+
+          <label for="managerIdInput">Standard ID</label><br/>
+          <input class="form-control" id="managerIdInput" type="text" name="managerIdInput" required="required" placeholder="Standard ID" />
        
-        <label for="emailInput"Branch Name></label><br/>
-        <input class="form-control" id="emailInput" type="text" name="emailInput" required="required" placeholder="Email"/>
-        <button type="submit" class="btn btn-primary">submit</button>
-      </fieldset>
-      </form>
-   
+          <label for="managerBranchNameInput" Branch Name>Branch Name</label><br/>
+          <input class="form-control" id="managerBranchNameInput" type="text" name="managerBranchNameInput" required="required" placeholder="Branch Name" />
+        
+          <label for="managerEmailInput" Branch Name>Email</label><br/>
+          <input class="form-control" id="managerEmailInput" type="text" name="managerEmailInput" required="required" placeholder="Email" />
+        
+          <label for="managerComments">Comments</label>
+          <textarea id="managerComments" name="comments" required="required" placeholder="Comments" ></textarea>
+       
+          <button type="submit">submit</button>
+       
+    </fieldset>
+  </form>
+  
+   <hr>
   
     <div class="col-6 mx-auto" id="managerListBox">
       <ul id="managerList">

@@ -1,13 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!-- fontawesome cdn -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="employee.css">
+        <title></title>
 </head>
 <body>
+
+  <!-- Top Navigation Menu -->
+  <div class="topnav">
+    <a href="#home" class="active">JPMorgan Chase Bank Schedule</a>
+    <div id="myLinks">
+      <a href="#news">Availability</a>
+      <a href="#contact">Managers</a>
+      <a href="#about">Employees</a>
+    </div>
+    <a href="#" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+  </div>
+  
+
+  <form id="employeeForm" action="/" method="POST">
+    <fieldset>
+     
+        <legend id="employeeTitle">Employee's Availability</legend>
+        
+          <label for="employeeNameInput">Employee Name</label><br/>
+          <input class="form-control" id="employeeNameInput" type="text" name="employeeNameInput" required="required" placeholder="Employee Name" />
+
+          <label for="employeeIdInput">Standard ID</label><br/>
+          <input class="form-control" id="employeeIdInput" type="text" name="employeeIdInput" required="required" placeholder="Standard ID" />
+       
+          <label for="employeeBranchNameInput" Branch Name>Branch Name</label><br/>
+          <input class="form-control" id="employeeBranchNameInput" type="text" name="employeeBranchNameInput" required="required" placeholder="Branch Name" />
+        
+          <label for="employeeEmailInput" Branch Name>Email</label><br/>
+          <input class="form-control" id="employeeEmailInput" type="text" name="employeeEmailInput" required="required" placeholder="Email" />
+        
+          <label for="employeeComments">Comments</label>
+          <textarea id="employeeComments" name="employeeComments" required="required" placeholder="Comments" ></textarea>
+       
+          <button type="submit">submit</button>
+       
+    </fieldset>
+  </form>
+  
+   <hr>
+  
+    <div class="col-6 mx-auto" id="employeeListBox">
+      <ul id="employeeList">
+      </ul>
+    </div>
+
+
+
+    <footer>
+      <p class="text-center text-muted">© Copyright 2014 JPMorgan Chase Bank</p>
+  </footer>
     
-    <h1>employee page
-    </h1>
     
-    
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+    <script src="/employee.js"></script>
 </body>
 </html>

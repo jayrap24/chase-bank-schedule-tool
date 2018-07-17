@@ -2,10 +2,11 @@ const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
 const managerSchema = mongoose.Schema({
-    branchName: String,
+    managerId: String,
+    managerBranchName: String,
     managerName: String,
-    text: String,
-    email: String
+    managerText: String,
+    managerEmail: String
 })
 
 const Manager =  mongoose.model('Manager', managerSchema);

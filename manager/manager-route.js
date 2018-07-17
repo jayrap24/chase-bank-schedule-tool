@@ -13,17 +13,15 @@ router.get("/", (req, res) => {
 
 router.post("/", jsonParser, (req, res) => {
     const {managerName} = req.body;
-    const {branchName} = req.body;
-    const {email} = req.body;
+    const {managerBranchName} = req.body;
+    const {managerEmail} = req.body;
+    const {managerText}= req.body;
+    const{managerId}= req.body;
     
     
-    managerData.managerUpdates.push({managerName});
-    managerData.managerUpdates.push({branchName});
-    managerData.managerUpdates.push({email});
-    res.json({managerName});
-    res.json({branchName});
-    res.json({email});
-
+    managerData.managerUpdates.push({managerName,managerBranchName, managerEmail, managerText, managerId});
+    res.json({managerName,managerBranchName, managerEmail, managerText, managerId});
+   
 });
 
 router.get("/:id", (req, res) => {
@@ -41,8 +39,12 @@ router.patch("/:id", (req, res) => {
 });
 
 router.delete("/:id", (req, res) => {
+   managerData.managerUpdates = managerData.managerUpdates.filter((element)=> {
+       return element.managerId != req.params.id;
+   })
     res.status(200).json({
-        message: "deleted product",
+        message: "deleted ",
+        newManagerData: managerData
     })
 });
 

@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    background: linear-gradient( rgb(67, 73, 95), rgb(5, 14, 51));
+  }
+  /*============================Navbar================================= */
+  .topnav {
+    overflow: hidden;
+    background-color: rgb(22, 28, 53);
+    position: relative;
+    box-shadow: 3px 3px 3px #1f1e1e;
+  }
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  /* Style navigation menu links */
+  .topnav a {
+    color: rgb(243, 243, 243);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: rgb(116, 114, 114);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    color: rgb(255, 255, 255);
+  }
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: rgb(22, 28, 53);
+    color: rgb(223, 221, 221);
+  }
+  /*============================Manager Form Input================================= */
+  #employeeTitle {
+    padding: 20px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  #employeeForm {
+    width: 400px;
+    color: white;
+    margin: auto;
+  }
+  label {
+    display: none;
+  }
+  input {
+    width: 100%;
+  }
+  textarea {
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+  }
+  button {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  /*============================Manager List================================= */
+  hr{
+    background: white;
+    width: 80%;
+    margin: 50px auto 50px;
+  }
+  
+  /* manager list container */
+  #employeeListBox {
+    background: rgb(201, 200, 200);
+    padding: 2px;
+    min-width: 400px;
+    max-width: 720px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 4px 4px 4px 4px #1f1e1e;
+  }
+  .wrapper {
+    padding: 10px;
+  }
+  /* Remove margins and padding from the list */
+  #employeeList {
+    margin: 0;
+    padding: 0;
+  }
+  /* Style the list items */
+  #employeeList li {
+    list-style: none;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1.5px;
+    transition: 0.2s;
+  }
+  /* Set all odd list items to a different color (zebra-stripes) */
+  #employeeList li:nth-child(odd) {
+    background: #f9f9f9;
+  }
+  /* Darker background-color on hover */
+  #employeeList li:hover {
+    background: #ddd;
+  }
+  #employeeList li:first-child {
+    color: white;
+    background: rgb(22, 28, 53);
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 4px;
+  }
+  #deleteButton {
+    color: red;
+    top: 0;
+    right: 0;
+    position: absolute;
+    cursor: pointer;
+  }
+  /*============================Manager List================================= */
+  footer {
+    padding: 20px;
+  }
+  

@@ -1,27 +1,26 @@
 
-
 var MOCK_MANAGERS = {
     "managerUpdates": [
         {
-            "id": "44444",
+            "managerId": "44444",
             "managerName": "John Doe",
-            "branchName": "Kraemer",
-            "email": "something@chase.com",
-            "text": "available to work on Monday and Thursday"
+            "managerBranchName": "Kraemer",
+            "managerEmail": "something@chase.com",
+            "managerText": "available to work on Monday and Thursday"
         },
         {
-            "id": "555555",
+            "managerId": "555555",
             "managerName": "Jane Doe",
-            "branchName": "Anaheim Hills",
-            "email": "something@chase.com",
-            "text": " can work open shifts until 12PM everyday"
+            "managerBranchName": "Anaheim Hills",
+            "managerEmail": "something@chase.com",
+            "managerText": " can work open shifts until 12PM everyday"
         },
         {
-            "id": "6666666",
+            "managerId": "6666666",
             "managerName": "Mary Smith",
-            "branchName": "Yorba Linda",
-            "email": "something@chase.com",
-            "text": "open availability to work all summer"
+            "managerBranchName": "Yorba Linda",
+            "managerEmail": "something@chase.com",
+            "managerText": "open availability to work all summer"
            
         }
     ]
