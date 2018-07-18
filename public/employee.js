@@ -3,6 +3,7 @@ function getEmployees(){
     $("#employeeList").html("");
     $.getJSON("/api/employee", function(data){
         data.employeeUpdates.forEach(element => {
+            //append to the employee page
             $("#employeeList").append(
             `<div class="wrapper">
             <li id="employeeBranchEl"><span id="deleteButton" data-id="${element.employeeId}">&times;</span> Branch: ${element.employeeBranchName}</li>
@@ -10,12 +11,23 @@ function getEmployees(){
             <li>Email:${element.employeeEmail}</li>
             <li>Comment:${element.employeeText}</li>
             </div>`);
-        })  
+            //append to the homepage
+            $("#homePageEmployeeList").append(
+                `<div class="wrapper">
+                <li id="employeeBranchEl"> Branch: ${element.employeeBranchName}</li>
+                <li id="employeeNameEl"> Employee: ${element.employeeName} </li>
+                <li>Email:${element.employeeEmail}</li>
+                <li>Comment:${element.employeeText}</li>
+                </div>`);
+
+        }); 
         deleteButtonListener();
     })
 }
 getEmployees();
-//form submission
+
+
+//form submit function
 $('#employeeForm').on("submit", function(e){
     e.preventDefault();
     const employeeName = $("#employeeNameInput").val();
@@ -31,10 +43,7 @@ $('#employeeForm').on("submit", function(e){
     })
 })
 
-
-
 //Delete button function
-
 function deleteButtonListener(){
     $('#deleteButton').on('click', function(){
         const employeeId = $(this).data("id");
@@ -51,7 +60,7 @@ function deleteButtonListener(){
 
 
 
-//Top nav hamburger
+//Top nav hamburger function
 function myFunction() {
     let x = document.getElementById("myLinks");
     if (x.style.display === "block") {

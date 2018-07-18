@@ -1,0 +1,59 @@
+
+
+.homeContainer #homePageEmployeeListBox{
+    width: 50%;
+    float: left;
+    color: white;
+    list-style: none;
+    padding: 20px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 200;
+
+
+}
+
+.homeContainer #homePageManagerListBox{
+    width: 50%;
+    float: left;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 200;
+}
+
+li{
+    list-style: none;
+    background: #eee;
+    font-size: 14px;
+    font-weight: 200;
+    letter-spacing: 1.5px;
+    transition: 0.2s;
+    color: black;
+    padding: 4px;
+}
+
+ li:nth-child(odd) {
+    background: #f9f9f9;
+  }
+li:hover {
+    background: #ddd;
+  }
+  li:first-child {
+    color: white;
+    background: rgb(22, 28, 53);
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 4px;
+  }
+
+
+
+#welcomeImage{
+    background-image: url("chase-schedule-bank-tool/images/chaseHome.jpg");
+    height: 300px;
+    background: white;
+
+}

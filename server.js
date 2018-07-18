@@ -12,10 +12,12 @@ app.use(bodyParser.json());
 
 const { router: employeeRouter } = require('./employee/employee-route');
 const { router: managerRouter } = require('./manager/manager-route');
+const { router: homePageRouter } = require('./homePage/homePage-route');
 
 // user page
 app.use('/employee', employeeRouter);
 app.use('/manager', managerRouter);
+app.use('/homePage', homePageRouter);
 
 const { router: apiManagerRouter } = require('./manager/api-manager-route');
 const { router: apiEmployeeRouter } = require('./employee/api-employee-route');
@@ -23,6 +25,7 @@ const { router: apiEmployeeRouter } = require('./employee/api-employee-route');
 //api routers
 app.use('/api/manager', apiManagerRouter);
 app.use('/api/employee', apiEmployeeRouter);
+
 
 
 let server;

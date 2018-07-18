@@ -92,7 +92,7 @@
     padding: 10px;
   }
   /* Remove margins and padding from the list */
-  #employeeList {
+  #employeeList{
     margin: 0;
     padding: 0;
   }

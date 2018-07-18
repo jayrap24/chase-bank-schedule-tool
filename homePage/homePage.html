@@ -1,0 +1,60 @@
+<html>
+<head>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!-- fontawesome cdn -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="employee.css">
+        <link rel="stylesheet" href="manager.css">
+        <link rel="stylesheet" href="homePage.css">
+        <title></title>
+</head>
+<body>
+
+ <!-- Top Navigation Menu -->
+ <div class="topnav">
+    <a href="/homePage" class="active">JPMorgan Chase Bank Schedule</a>
+    <div id="myLinks">
+      <a href="/homePage">Availability</a>
+      <a href="/manager">Managers</a>
+      <a href="/employee">Employees</a>
+    </div>
+    <a href="#" class="icon" onclick="hamburger()">
+        <i class="fa fa-bars"></i>
+      </a>
+  </div>
+
+
+
+  <div id="welcomeImage"></div>
+   
+
+<div class="homeContainer">
+    <div class="col-6 mx-auto" id="homePageEmployeeListBox">
+        <div id="homePageEmployeeListTitle">List of Employees</div>
+      <ul id="homePageEmployeeList">
+      </ul>
+    </div>
+
+    <div class="col-6 mx-auto" id="homePageManagerListBox">
+            <div id="homePageManagerListTitle">List of Banks</div>
+            <ul id="homePageManagerList">
+            </ul>
+          </div>
+    </div>
+
+
+    <footer>
+      <p class="text-center text-muted">© Copyright 2014 JPMorgan Chase Bank</p>
+  </footer>
+    
+    
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+    <script src="/employee.js"></script>
+    <script src="/manager.js"></script>
+</body>
+</html>
