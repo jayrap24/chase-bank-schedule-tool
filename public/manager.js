@@ -4,11 +4,11 @@ function getManagers(){
     //get the json data from the api/manager routes
     $.getJSON("/api/manager", function(data){
         //pull every element from the api
-        data.managerUpdates.forEach(element => {
+        data.forEach(element => {
             //appends to the manager page 
             $("#managerList").append(
             `<div class="wrapper">
-            <li id="managerBranchEl"><span id="deleteButton" data-id="${element.managerId}">&times;</span> Branch: ${element.managerBranchName}</li>
+            <li id="managerBranchEl"><span class="deleteButton" data-id="${element.managerId}">&times;</span> Branch: ${element.managerBranchName}</li>
             <li id="managerNameEl"> Manager: ${element.managerName} </li>
             <li>Email:${element.managerEmail}</li>
             <li>Comment:${element.managerText}</li>
@@ -45,8 +45,7 @@ $('#managerForm').on("submit", function(e){
         contentType: 'application/json',
         method: "POST", url: "/manager", 
         data: JSON.stringify({managerName:managerName, managerBranchName: managerBranchName, managerEmail: managerEmail, managerText:managerText, managerId:managerId}) 
-    }).done(function(){
-        
+    }).done(function(){ 
         getManagers();
     })
 })
@@ -55,7 +54,7 @@ $('#managerForm').on("submit", function(e){
 
 //Delete button function
 function deleteButtonListener(){
-    $('#deleteButton').on('click', function(){
+    $('.deleteButton').on('click', function(){
         const managerId = $(this).data("id");
         console.log(managerId)
         $.ajax({

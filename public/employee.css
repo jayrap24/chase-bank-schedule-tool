@@ -123,7 +123,7 @@
     text-align: center;
     letter-spacing: 4px;
   }
-  #deleteButton {
+  .deleteButton {
     color: red;
     top: 0;
     right: 0;

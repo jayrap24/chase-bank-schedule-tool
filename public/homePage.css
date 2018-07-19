@@ -52,8 +52,10 @@ li:hover {
 
 
 #welcomeImage{
-    background-image: url("chase-schedule-bank-tool/images/chaseHome.jpg");
+    background-image: url("/images/chaseHome.jpg");
     height: 300px;
-    background: white;
+    background-size: cover;
+
+    
 
 }

@@ -2,10 +2,12 @@ const express = require('express');
 const router = express.Router();
 
 
-const employeeData = require('./storage-data-employee');
+const {Employee} = require('../models/employee-model')
 
 router.get("/", (req, res) => {
-    res.json(employeeData)
+    Employee.find().then((employees)=>{
+      res.json(employees);
+    })
   });
 
 

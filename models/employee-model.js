@@ -1,13 +1,12 @@
 const mongoose = require('mongoose');
-
 mongoose.Promise = global.Promise;
 
 const employeeSchema = mongoose.Schema({
-    id: String,
-    branchName: String,
+    employeeId: String,
+    employeeBranchName: String,
     employeeName: String,
-    text: String,
-    email: String
+    employeeText: String,
+    employeeEmail: String
 })
 
 const Employee =  mongoose.model('Employee', employeeSchema);

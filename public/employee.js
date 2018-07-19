@@ -2,11 +2,12 @@ function getEmployees(){
     $("#employeeName").html("");
     $("#employeeList").html("");
     $.getJSON("/api/employee", function(data){
-        data.employeeUpdates.forEach(element => {
+        //pull every element from the api
+        data.forEach(element => {
             //append to the employee page
             $("#employeeList").append(
             `<div class="wrapper">
-            <li id="employeeBranchEl"><span id="deleteButton" data-id="${element.employeeId}">&times;</span> Branch: ${element.employeeBranchName}</li>
+            <li id="employeeBranchEl"><span class="deleteButton" data-id="${element.employeeId}">&times;</span> Branch: ${element.employeeBranchName}</li>
             <li id="employeeNameEl"> Employee: ${element.employeeName} </li>
             <li>Email:${element.employeeEmail}</li>
             <li>Comment:${element.employeeText}</li>
@@ -45,7 +46,7 @@ $('#employeeForm').on("submit", function(e){
 
 //Delete button function
 function deleteButtonListener(){
-    $('#deleteButton').on('click', function(){
+    $('.deleteButton').on('click', function(){
         const employeeId = $(this).data("id");
         console.log(employeeId)
         $.ajax({

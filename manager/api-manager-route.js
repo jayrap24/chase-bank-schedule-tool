@@ -2,12 +2,14 @@
 const express = require('express');
 const router = express.Router();
 
-
-const managerData = require('./storage-data-manager');
+const {Manager} = require('../models/manager-model');
 
 router.get("/", (req, res) => {
-    res.json(managerData)
-    console.log("got to localhost 8080")
+Manager.find().then((managers)=>{
+  res.json(managers);
+})
+
+
   });
 
 
