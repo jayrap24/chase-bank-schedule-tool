@@ -3,6 +3,7 @@ const app = express();
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const passport = require('passport');
 
 mongoose.Promise = global.Promise;
 const { PORT, DATABASE_URL } = require('./config');
@@ -31,6 +32,10 @@ app.use('/api/employee', apiEmployeeRouter);
 
 
 //JWT Authentication
+
+const { router: usersRouter } = require('./users');
+const { router: authRouter, localStrategy, jwtStrategy } = require('./auth');
+
 passport.use(localStrategy);
 passport.use(jwtStrategy);
 
@@ -45,8 +50,6 @@ app.get('/api/protected', jwtAuth, (req, res) => {
     data: 'rosebud'
   });
 });
-
-
 
 
 

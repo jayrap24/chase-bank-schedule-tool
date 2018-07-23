@@ -96,7 +96,7 @@ router.post('/', jsonParser, (req, res) => {
     });
   }
 
-  let {name, password, email} = req.body;
+  let {name, password, email, userType} = req.body;
   // Username and password come in pre-trimmed, otherwise we throw an error
   // before this
   name = name.trim();
@@ -121,7 +121,8 @@ router.post('/', jsonParser, (req, res) => {
       return User.create({
         name,
         password: hash,
-        email
+        email,
+        userType
       });
     })
     .then(user => {
