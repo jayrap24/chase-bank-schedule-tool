@@ -13,11 +13,14 @@ app.use(bodyParser.json());
 const { router: employeeRouter } = require('./employee/employee-route');
 const { router: managerRouter } = require('./manager/manager-route');
 const { router: homePageRouter } = require('./homePage/homePage-route');
+const { router: signInSignUpRouter } = require('./signInSignUp/signInSignUp-route');
 
 // user page
 app.use('/employee', employeeRouter);
 app.use('/manager', managerRouter);
 app.use('/homePage', homePageRouter);
+app.use('/signInSignUp', signInSignUpRouter);
+
 
 const { router: apiManagerRouter } = require('./manager/api-manager-route');
 const { router: apiEmployeeRouter } = require('./employee/api-employee-route');
@@ -25,6 +28,25 @@ const { router: apiEmployeeRouter } = require('./employee/api-employee-route');
 //api routers
 app.use('/api/manager', apiManagerRouter);
 app.use('/api/employee', apiEmployeeRouter);
+
+
+//JWT Authentication
+passport.use(localStrategy);
+passport.use(jwtStrategy);
+
+app.use('/api/users/', usersRouter);
+app.use('/api/auth/', authRouter);
+
+const jwtAuth = passport.authenticate('jwt', { session: false });
+
+// A protected endpoint which needs a valid JWT to access it
+app.get('/api/protected', jwtAuth, (req, res) => {
+  return res.json({
+    data: 'rosebud'
+  });
+});
+
+
 
 
 
