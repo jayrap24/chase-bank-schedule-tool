@@ -14,8 +14,7 @@ const UserSchema = mongoose.Schema({
     type: String,
     required: true
   },
-  name: {type: String, default: ''},
-  userType: {type: String}
+  name: {type: String, default: ''}
 });
 
 UserSchema.methods.serialize = function() {

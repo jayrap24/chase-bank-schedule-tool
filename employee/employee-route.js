@@ -28,7 +28,7 @@ router.get("/", (req, res) => {
 
 //delete request
 router.delete("/:id", (req, res) => {
-Employee.findOneAndRemove({employeeName:req.params.id})
+Employee.findOneAndRemove({employeeId:req.params.id})
 .then(()=>{
     res.status(200).json({
         message: "deleted "      

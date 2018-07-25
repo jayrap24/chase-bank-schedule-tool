@@ -28,24 +28,29 @@
   
 
     <div class="form-wrap">
-        
-            <form>
-                <h1>Sign Up</h1>
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
+            <form id="signUpForm" action="/" method="POST">
+                <fieldset>
+                <legend>Sign Up</legend>
+                <input id="signUpNameInput" type="text" placeholder="Name">
+                <input id="signUpEmailInput" type="email" placeholder="Email">
+                <input id="signUpPasswordInput"type="password" placeholder="Password">
                 <select>
-                        <option value="Manager">Manager</option>
-                        <option value="Employee">Employee</option>
+                        <option id="signUpManagerOption" value="Manager">Manager</option>
+                        <option id="signUpEmployeeOption" value="Employee">Employee</option>
                       </select>
                 <input type="button" value="Sign Up">
+            </fieldset>
             </form>
 
+
+
             <form>
-                    <h1>Sign In</h1>
+                <fieldset>
+                    <legend>Sign In</legend>
                     <input type="email" placeholder="Email">
                     <input type="password" placeholder="Password">
                     <input type="button" value="Sign In">
+                </fieldset>
                 </form>
         
         </div>

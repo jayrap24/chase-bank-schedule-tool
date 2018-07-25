@@ -62,7 +62,7 @@ function deleteButtonListener(){
 
 
 //Top nav hamburger function
-function myFunction() {
+function hamburger() {
     let x = document.getElementById("myLinks");
     if (x.style.display === "block") {
       x.style.display = "none";

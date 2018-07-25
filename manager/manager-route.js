@@ -37,8 +37,6 @@ router.delete("/:id", (req, res) => {
             message: "deleted "
         })
     })
-
-
   
 });
 
