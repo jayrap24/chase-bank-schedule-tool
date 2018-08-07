@@ -12,6 +12,10 @@ router.get("/", (req, res) => {
     res.sendFile(__dirname + '/manager.html');
 });
 
+
+
+
+
 //post request
 router.post("/", jsonParser, (req, res) => {
     //these values from the body/form inputs

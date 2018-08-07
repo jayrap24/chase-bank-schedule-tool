@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 
-
 const {Employee} = require('../models/employee-model')
 
 router.get("/", (req, res) => {
@@ -9,7 +8,5 @@ router.get("/", (req, res) => {
       res.json(employees);
     })
   });
-
-
   
 module.exports = {router}
