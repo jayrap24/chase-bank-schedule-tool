@@ -2,7 +2,7 @@
     box-sizing: border-box;
   }
   body {
-    background: linear-gradient( rgb(67, 73, 95), rgb(5, 14, 51));
+    background: radial-gradient( circle, rgb(41, 46, 65), rgb(5, 14, 51));
   }
   /*============================Navbar================================= */
   .topnav {
@@ -40,6 +40,14 @@
     background-color: rgb(22, 28, 53);
     color: rgb(223, 221, 221);
   }
+  #employeeMainTitle{
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    letter-spacing: .02px;
+    }
+
   /*============================Manager Form Input================================= */
   #employeeTitle {
     padding: 20px;

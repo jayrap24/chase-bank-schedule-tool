@@ -8,7 +8,7 @@ function getManagers(){
             //appends to the manager page 
             $("#managerList").append(
             `<div class="wrapper">
-            <li id="managerBranchEl"><span class="deleteButton" data-id="${element.managerId}">&times;</span> Branch: ${element.managerBranchName}</li>
+            <li id="managerBranchEl"><span class="deleteButton" data-id="${element.managerId}">&times;</span> Bank: ${element.managerBranchName}</li>
             <li id="managerNameEl"> Manager: ${element.managerName} </li>
             <li>Email:${element.managerEmail}</li>
             <li>Comment:${element.managerText}</li>
@@ -16,7 +16,7 @@ function getManagers(){
             //appends to the homePage
             $("#homePageManagerList").append(
                 `<div class="wrapper">
-                <li id="managerBranchEl"> Branch: ${element.managerBranchName}</li>
+                <li id="managerBranchEl"> Bank: ${element.managerBranchName}</li>
                 <li id="managerNameEl"> Manager: ${element.managerName} </li>
                 <li>Email:${element.managerEmail}</li>
                 <li>Comment:${element.managerText}</li>

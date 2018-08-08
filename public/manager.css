@@ -7,14 +7,31 @@ body {
 /*============================Navbar================================= */
 .topnav {
   overflow: hidden;
-  background-color: rgb(22, 28, 53);
+  background-color:transparent;
   position: relative;
-  
-  
 }
+
+#title{
+text-align: center;
+font-weight: 500;
+font-family: 'Times New Roman', Times, serif;
+font-size: 30px;
+letter-spacing: .02px;
+}
+
+#managerMainTitle{
+  text-align: center;
+  font-weight: 500;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  letter-spacing: .02px;
+  }
+
+
 /* Hide the links inside the navigation menu (except for logo/home) */
 .topnav #myLinks {
   display: none;
+  
 }
 /* Style navigation menu links */
 .topnav a {
@@ -29,7 +46,7 @@ body {
 }
 /* Style the hamburger menu */
 .topnav a.icon {
-  background: rgb(116, 114, 114);
+  background: none;
   display: block;
   position: absolute;
   right: 0;
@@ -41,9 +58,12 @@ body {
 }
 /* Style the active link (or home/logo) */
 .active {
-  background-color: rgb(22, 28, 53);
+  background-color: none;
   color: rgb(223, 221, 221);
+ 
 }
+  
+
 /*============================Manager Form Input================================= */
 #managerTitle {
   padding: 20px;

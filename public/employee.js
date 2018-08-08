@@ -7,7 +7,7 @@ function getEmployees(){
             //append to the employee page
             $("#employeeList").append(
             `<div class="wrapper">
-            <li id="employeeBranchEl"><span class="deleteButton" data-id="${element.employeeId}">&times;</span> Branch: ${element.employeeBranchName}</li>
+            <li id="employeeBranchEl"><span class="deleteButton" data-id="${element.employeeId}">&times;</span> Bank: ${element.employeeBranchName}</li>
             <li id="employeeNameEl"> Employee: ${element.employeeName} </li>
             <li>Email:${element.employeeEmail}</li>
             <li>Comment:${element.employeeText}</li>
@@ -15,7 +15,7 @@ function getEmployees(){
             //append to the homepage
             $("#homePageEmployeeList").append(
                 `<div class="wrapper">
-                <li id="employeeBranchEl"> Branch: ${element.employeeBranchName}</li>
+                <li id="employeeBranchEl"> Bank: ${element.employeeBranchName}</li>
                 <li id="employeeNameEl"> Employee: ${element.employeeName} </li>
                 <li>Email:${element.employeeEmail}</li>
                 <li>Comment:${element.employeeText}</li>
