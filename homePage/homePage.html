@@ -15,7 +15,7 @@
 
  <!-- Top Navigation Menu -->
  <div class="topnav">
-    <a href="/homePage" class="active">JPMorgan Chase Bank Schedule</a>
+    <a href="/homePage" class="active">JPMorgan Chase Schedule Tool</a>
     <div id="myLinks">
       <a href="/manager">Managers</a>
       <a href="/employee">Employees</a>
@@ -25,20 +25,26 @@
       </a>
   </div>
 
+  <div id="introSection">
+    <div id="about">
+      <p>This web application will help managers identify other employees within the firm to assist with staffing.</p>
+      <button type="button" id="findCoverage">Find Coverage &#8702;</button> 
+    </div>
+    <div id="about2">
+        <p><strong><a href="/manager">Managers</a></strong> & <strong><a href="/employee">Employees</a></strong> have the ability to post their needs or availability.</p>
+    </div>
+  </div>
 
-
-  <div id="welcomeImage"></div>
-   
   
 <div class="homeContainer">
     <div class="col-6 mx-auto" id="homePageEmployeeListBox">
-        <div id="homePageEmployeeListTitle">List of Employees</div>
+        <div id="homePageEmployeeListTitle">List of Employees &#8702;</div>
       <ul id="homePageEmployeeList">
       </ul>
     </div>
 
     <div class="col-6 mx-auto" id="homePageManagerListBox">
-            <div id="homePageManagerListTitle">List of Banks</div>
+            <div id="homePageManagerListTitle">List of Banks &#8702;</div>
             <ul id="homePageManagerList">
             </ul>
           </div>
@@ -53,6 +59,7 @@
     src="https://code.jquery.com/jquery-2.2.4.min.js"
     integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
     crossorigin="anonymous"></script>
+    <script src="/homePage.js"></script>
     <script src="/employee.js"></script>
     <script src="/manager.js"></script>
 </body>

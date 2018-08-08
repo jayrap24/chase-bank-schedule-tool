@@ -9,6 +9,59 @@ body{
 }
 
 
+#introSection{
+    background: radial-gradient(circle at 0 0,#7a5940, #b1a091,#7a5940);;
+    height: 400px;
+    width: 95%;
+    margin: auto;
+    margin-top: 10px;
+
+}
+#about{
+    height: 100%;
+    width:380px;
+    background:white;
+    opacity: .8;   
+    float: left;
+}
+
+#about p {
+    color: black;
+    padding: 40px;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+#findCoverage{
+    background: none;
+    border: none;
+    font-weight: 100;
+
+}
+
+#about2 p {
+    color: black;
+    padding: 60px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    width: 100%;
+    right:0;
+    text-align: center;
+    font-size: 34px;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+
+
+ 
+
+
 .homeContainer{
     margin-bottom: 1000px;
 }
@@ -23,6 +76,8 @@ body{
     font-size: 30px;
     letter-spacing: 2px;
     font-weight: 200;
+    margin-top:40px;
+    margin-bottom: 20px;
 
 
 }
@@ -36,7 +91,10 @@ body{
     font-size: 30px;
     letter-spacing: 2px;
     font-weight: 200;
+    margin-top:40px;
 }
+
+
 
 li{
     list-style: none;
@@ -46,32 +104,35 @@ li{
     letter-spacing: 1.5px;
     transition: 0.2s;
     color: black;
-    padding: 4px;
+    padding: 10px;  
 }
 
  li:nth-child(odd) {
-    background: #f9f9f9;
+    background: #f9f9f9; 
   }
+
+ 
+
+  li:nth-child(1n+1) {
+  display: none;
+  }
+
 li:hover {
     background: #ddd;
   }
-  li:first-child {
+
+li:first-child {
     color: white;
     background: rgb(22, 28, 53);
     font-weight: 500;
     font-size: 20px;
     text-align: center;
     letter-spacing: 4px;
+    height: 60px;
   }
 
+  
 
-
-#welcomeImage{
-    background-image: url("/images/chaseHome.jpg");
-    height: 300px;
-    background-size: cover;
-
-}
 
     /*============================Footer================================= */
 #wrapper{

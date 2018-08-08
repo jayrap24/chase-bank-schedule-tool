@@ -119,15 +119,20 @@ body {
  }
 
 
- #welcomeJPMorgan, #start{
+ #welcomeJPMorgan, #start, #signIn{
    display: none;
    font-size: 60px;
    font-weight: 100;
    text-align: center;
  }
 
- #start{
+ #start, #signIn{
    font-size:20px;
+   background: none;
+   color: white;
+   font-weight: 300;
+   margin-top: 40px;
+   margin: 10px;
    
  }
 
