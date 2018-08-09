@@ -5,6 +5,9 @@ For instance, a manager may require additional staffing coverage for his/her ban
 This app tool help managers find part-time employees who are willing to cover and work extra hours. Part-time employees are able to post
 their contact information and availability. If the availability matches the manager's needs then he or she can contact the employee for coverage. 
 
+## Live App 
+https://whispering-headland-62710.herokuapp.com/homepage
+
 ## Technologies used
   * Node.js
   * Express.js
